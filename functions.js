@@ -20,7 +20,9 @@ const anonymousGreet = function() {
 };
 anonymousGreet();
 
-// When we invoke the functions new execution context is created. Creation of variable enviroment, reference to outer (lexical) environment, creation of 'this. This refers to global object.
+// When we invoke the functions new execution context is created.
+// Creation of variable enviroment, reference to outer (lexical) environment, creation of 'this.
+// This refers to global object, newVariable sits on global object.
 
 function reference() {
   this.newVariable = 'global';
@@ -28,7 +30,7 @@ function reference() {
 reference();
 console.log(newVariable);
 
-//This keyword inside the object reference to Object, so we can accesed to property of object
+//This keyword inside the object reference to Object, so we can accesed to property of object.
 
 const person = {
   name: 'John',
@@ -38,7 +40,7 @@ const person = {
 };
 person.log();
 
-// If we have function inside function inside function ite refer to global object
+// If we have function inside function inside function its refer to global object.
 
 const person2 = {
   name: 'John',
