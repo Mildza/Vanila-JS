@@ -49,9 +49,9 @@ const fruitBasket = [
   'orange',
   'fig',
 ];
-const count = fruitBasket.reduce((tally, fruit) => {
-  tally[fruit] = (tally[fruit] || 0) + 1;
-  return tally;
+const count = fruitBasket.reduce((object, fruit) => {
+  object[fruit] = (object[fruit] || 0) + 1;
+  return object;
 }, {});
 console.log(count);
 

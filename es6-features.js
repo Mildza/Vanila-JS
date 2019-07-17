@@ -41,7 +41,7 @@ function isEqualTo(number, compare = 10) {
 console.log(isEqualTo(10));
 
 // Object literals
-// We can use bracket notatio
+// We can use bracket notation
 let name = 'Jane';
 let genreField = 'genre';
 obj = {
@@ -119,7 +119,6 @@ let copied = [...original];
 console.log(copied);
 
 // Object are pulling by name
-
 let simple = {
   jane: 'Jane',
   hi: function() {
@@ -130,3 +129,17 @@ let simple = {
 let { jane, hi } = simple;
 console.log(jane);
 console.log(hi());
+
+// Math.sign - resolve sign of number, return -1 or 1
+let positive = 5;
+let negative = -5;
+let nullNum = 0;
+console.log(positive, negative, nullNum);
+
+//Math.trunc - cut all after decimal place
+let truncked = 5.51;
+console.log(Math.trunc(truncked));
+
+// String - startsWith, endWith return true or false
+
+// Number - isNaN, isFinite, isInteger
